@@ -14,7 +14,12 @@ public class PersonasApellidoA
         personas.add(persona);
 
         long contar = personas.stream()
-                .filter(person -> person.lastName.startsWith("A")||person.lastName.startsWith("a")||person.lastName.startsWith("Á")||person.lastName.startsWith("À")||person.lastName.startsWith("á")||person.lastName.startsWith("à"))
+                .filter(person -> person.getLastName().startsWith("A")
+                        ||person.getLastName().startsWith("a")
+                        ||person.getLastName().startsWith("Á")
+                        ||person.getLastName().startsWith("À")
+                        ||person.getLastName().startsWith("á")
+                        ||person.getLastName().startsWith("à"))
                 .count();
 
         System.out.println(contar + " apellido/s empiezan por A/Á/À/a/á/à.");
