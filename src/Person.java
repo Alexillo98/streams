@@ -1,7 +1,7 @@
 public class Person {
-    public String firstName;
-    public String lastName;
-    public int birthYear;
+    private String firstName;
+    private String lastName;
+    private int birthYear;
 
     public Person(String firstName, String lastName, int birthYear) {
         this.firstName = firstName;
