@@ -18,5 +18,6 @@ public class PersonaAntes1970
                 .count();
 
         System.out.println("Cuantos hay de antes del 1970: " + count);
+
     }
 }
